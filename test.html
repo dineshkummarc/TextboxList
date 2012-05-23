@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>TextboxList demo</title>
+    
+    <link rel="stylesheet" href="test.css" type="text/css" media="screen" title="Test Stylesheet" charset="utf-8" />
+    
+    <script src="mootools-beta-1.2b1.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="textboxlist.js" type="text/javascript" charset="utf-8"></script>-->
+    <script src="textboxlist.compressed.js" type="text/javascript" charset="utf-8"></script>
+    <script src="test.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  
+  <body id="test">
+    
+    <h1>TextboxList Demo</h1>
+    <p><a href="http://devthought.com/textboxlist-fancy-facebook-like-dynamic-inputs/">Go to article page</a>, <a href="http://devthought.com/textboxlist-meets-autocompletion/">See autocompleter example (<strong>cool!</strong>)</a></p>
+    
+    <form action="test_submit" method="get" accept-charset="utf-8">
+      <ol>
+        <li class="input-text">
+          <label>Simple input</label>
+          <input type="text" name="testinput" value="" id="testinput" />
+        </li>
+        
+        <li class="input-text">
+          <label>TextboxList input</label>
+          <input type="text" value="" id="input-demo" />
+        </li>
+        
+        <li id="facebook-list" class="input-text">
+          <label>FacebookList input</label>
+          <input type="text" value="" id="input-demo2" />
+        </li>
+        
+        <li id="apple-list" class="input-text">
+          <label>Apple-like input (hideempty: false)</label>
+          <input type="text" value="" id="input-demo3" />
+        </li>
+        
+        <li class="input-text">
+          <label>Simplest input (extrainputs: false)</label>
+          <input type="text" value="" id="input-demo4" />
+        </li>
+        
+        <li id="demo" class="input-text">
+          <label>Hardcoded (ie, what javascript should produce)</label>
+          <ul class="holder">
+            <li class="bit-input"><input type="text" value="" class="smallinput" /></li>
+            <li class="bit-box">Jorge Luis Borges <a href="#" class="closebutton"></a></li>
+            <li class="bit-input"><input type="text" value="" class="smallinput" /></li>            
+            <li class="bit-box">Julio Cortazar <a href="#" class="closebutton"></a></li>
+            <li class="bit-input"><input type="text" value="" class="maininput" /></li>
+          </ul>
+        </li>
+      </ol>
+      
+    </form>      
+      
+    <form action="test" id="add">
+      <ol>
+        <li class="input-text">
+          <label>Add a new box</label>
+          <input type="text" id="add-input" />
+          <a href="#" id="add-click">Add</a>
+        </li>
+      </ol>
+    </form>
+  </body>
+  
+</html>
